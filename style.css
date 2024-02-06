@@ -3,23 +3,36 @@ body {
   
     font-family: "Open Sans", sans-serif;
   
-    background: linear-gradient(90deg, rgb(227, 255, 248, 0) 82.08%, rgb(227, 255, 248, 0.38) 100%);
+    background: linear-gradient(270deg, rgba(65, 172, 145, 0) 82.08%, rgb(227, 255, 248, 0.38) 100%);
   
     min-height: 100vh;
   }
   
   .page {
-    width: 600px;
+    
+    width: 1280px;
+    height: 720px;
     margin: 0 auto;
     padding-top: 65px;
   }
   
   nav {
     display: flex;
-    justify-content: start;
-    align-items: center;
-  
-    margin-bottom: 15px;
+    justify-content: space-between;
+    align-items: center;  
+    margin-bottom: 60px;
+    width: 1005px;
+  }
+
+
+  main{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 1008px;
+    height: 433px;
+
   }
   
   ul {
@@ -27,6 +40,7 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    gap: 48px;
   }
   
   a {
@@ -53,9 +67,9 @@ body {
     line-height: 56px;
     color: #1f1534;
   
-    font-weight: normal;
-  
+    font-weight: normal;  
     width: 490px;
+    
   }
   
   h1 span {
@@ -66,30 +80,30 @@ body {
   section p {
     font-size: 14px;
     line-height: 28px;
-    color: #7d7987;
-  
+    color: #7d7987;  
     margin: 40px 0;
   }
   
   button {
-    color: white;
+
+    color: #F9F9F9;
     font-family: "Open Sans", sans-serif;
   
     background: #69B99D;
     border: 0;
-    padding: 0 50px 30px;
+    padding: 14px 32px 15px;
+    gap: 10px;
   
-    display: flex;
-    justify-content: space-around;
-    gap: 50px;
-  
-    border-radius: 4px;
-  
-    cursor: pointer;
+    display: flex;     
+    align-items: center;
+    border-radius: 4px;  
+    text-transform: uppercase;
+    
   }
   
   button:hover {
       background: #4EA788;
+      transition: 500ms;
   }
   
   footer {
@@ -106,6 +120,7 @@ body {
   }
   
   #balls {
+      position: fixed;
       bottom: 0;
       right: 0;
   }
